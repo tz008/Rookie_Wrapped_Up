@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.rookie_wrapped_up.entity.Address;
 import com.example.rookie_wrapped_up.entity.People;
 import com.example.rookie_wrapped_up.entity.Site;
 
@@ -27,6 +28,7 @@ public class NavigationList_01 extends Activity {
     SQLiteDatabase db;
     private TextView  tName,tPhone,tAddress01,tAddress02;
     People people = new People();
+    Address address = new Address();
     List<OPItem> opList;
     GridView gridView;
 
@@ -159,7 +161,7 @@ public class NavigationList_01 extends Activity {
             cursor.moveToFirst();
 
             people.setName(cursor.getString(1));
-            people.setPhone(cursor.getInt(3));
+            people.setPhone(cursor.getString(3));
         }
 
 
@@ -172,16 +174,17 @@ public class NavigationList_01 extends Activity {
             Log.v("NavigationList_01","有");
             cursor2.moveToFirst();
 
-            people.setAddress01(cursor2.getString(1)+cursor2.getString(2));
-            people.setAddress02(cursor2.getString(3));
+           address.setProvince(cursor2.getString(1));
+           address.setCity(cursor2.getString(2));
+           address.setDetailedAddress(cursor2.getString(3));
         }
 
 
         Log.v("NavigationList_01",people.getName());
         tName.setText(people.getName());
         tPhone.setText(people.getPhone()+"");
-        tAddress01.setText(people.getAddress01());
-        tAddress02.setText(people.getAddress02());
+        tAddress01.setText(address.getProvince()+address.getCity());
+        tAddress02.setText(address.getDetailedAddress());
 
         cursor.close();
         db.close();

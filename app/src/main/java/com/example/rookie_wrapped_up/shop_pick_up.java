@@ -33,6 +33,7 @@ public class shop_pick_up extends AppCompatActivity {
 
         myHelper = new MyHelper(shop_pick_up.this);
         init();
+        pickUpMailPage();
 
 
         //取件页面 点击去往  裹裹购页面
@@ -41,6 +42,19 @@ public class shop_pick_up extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent=new Intent(shop_pick_up.this,MainActivity.class);
+                //启动
+                startActivity(intent);
+            }
+        });
+    }
+
+//    取件页面点击去寄件页面
+    private void pickUpMailPage(){
+        LinearLayout mailPageButton = findViewById(R.id.pick_up_mailPage);
+        mailPageButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent=new Intent(shop_pick_up.this,NavigationList_01.class);
                 //启动
                 startActivity(intent);
             }
