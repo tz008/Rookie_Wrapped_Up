@@ -28,7 +28,7 @@ public class settingActivity extends AppCompatActivity {
         mailPageButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent=new Intent(settingActivity.this,Login.class);
+                Intent intent=new Intent(settingActivity.this,MainActivity.class);
                 //启动
                 startActivity(intent);
             }
