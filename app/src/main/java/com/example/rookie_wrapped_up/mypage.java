@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +32,7 @@ public class mypage extends AppCompatActivity implements View.OnClickListener{
         findViewById(R.id.my_pick_up).setOnClickListener(this);
         findViewById(R.id.my_mail_page).setOnClickListener(this);
         findViewById(R.id.my_shopping).setOnClickListener(this);
+        findViewById(R.id.my_setting).setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
@@ -50,6 +52,9 @@ public class mypage extends AppCompatActivity implements View.OnClickListener{
                 break;
             case R.id.my_shopping:
                 intent.setClass(mypage.this,MainActivity.class);
+                break;
+            case R.id.my_setting:
+                intent.setClass(mypage.this,settingActivity.class);
                 break;
         }
         startActivity(intent);
@@ -98,5 +103,7 @@ public class mypage extends AppCompatActivity implements View.OnClickListener{
         cursor.close();
         db.close();
     }
+
+
 }
 

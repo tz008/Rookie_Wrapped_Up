@@ -74,6 +74,7 @@
                                     android:textColor="#00AAFD"
                                     android:text="我要寄件"/>
                                 <TextView
+                                    android:id="@+id/mail_page_out2"
                                     android:layout_width="75dp"
                                     android:layout_height="50dp"
                                     android:layout_marginLeft="10dp"

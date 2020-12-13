@@ -59,6 +59,7 @@ public class NavigationList_02 extends Activity {
     private void pickUpAddBook(){
         TextView pickText01 = findViewById(R.id.jump_dzp01);
         TextView pickText02 = findViewById(R.id.jump_dzp02);
+        TextView mailPageOut2 = findViewById(R.id.mail_page_out2);
         pickText01.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -71,6 +72,14 @@ public class NavigationList_02 extends Activity {
             @Override
             public void onClick(View v){
                 Intent intent=new Intent(NavigationList_02.this,my_address_book.class);
+                //启动
+                startActivity(intent);
+            }
+        });
+        mailPageOut2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent=new Intent(NavigationList_02.this,OutPut.class);
                 //启动
                 startActivity(intent);
             }
