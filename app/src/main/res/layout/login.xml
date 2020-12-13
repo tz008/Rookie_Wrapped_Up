@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="		#DCDCDC">
+
+
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/login_taobao"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入用户名："
+        android:maxLines="2"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:background="@drawable/login_edit_background"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入密码："
+        android:maxLines="2"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:background="@drawable/login_edit_background"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:id="@+id/login_login"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click1"
+        android:background="			#D2691E"
+        />
+
+
+
+</LinearLayout>
+
+
