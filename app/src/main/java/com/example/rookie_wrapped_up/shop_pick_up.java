@@ -34,6 +34,7 @@ public class shop_pick_up extends AppCompatActivity {
         myHelper = new MyHelper(shop_pick_up.this);
         init();
         pickUpMailPage();
+        goMailPage();
 
 
         //取件页面 点击去往  裹裹购页面
@@ -60,6 +61,19 @@ public class shop_pick_up extends AppCompatActivity {
             }
         });
     }
+
+//    点击去往我的页面
+private void goMailPage(){
+    LinearLayout mailPageButton = findViewById(R.id.pick_up_my);
+    mailPageButton.setOnClickListener(new View.OnClickListener(){
+        @Override
+        public void onClick(View v){
+            Intent intent=new Intent(shop_pick_up.this,mypage.class);
+            //启动
+            startActivity(intent);
+        }
+    });
+}
 
     //连接数据库SQLite
     private void init(){

@@ -15,7 +15,7 @@
 
         <!--头部-->
         <LinearLayout
-            android:id="@+id/layout_top_01"
+            android:id="@+id/layout_top_02"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
@@ -42,7 +42,7 @@
 
         <!--导航栏-->
         <LinearLayout
-            android:id="@+id/navigation_bar_01"
+            android:id="@+id/navigation_bar_02"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
@@ -61,7 +61,6 @@
                         <HorizontalScrollView
                             android:layout_width="match_parent"
                             android:layout_height="20dp">
-
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -104,11 +103,8 @@
                                     android:layout_marginLeft="10dp"
                                     android:layout_gravity="center"
                                     android:text="货运搬家"/>
-
                             </LinearLayout>
                         </HorizontalScrollView>
-
-
                     </ScrollView>
                 </LinearLayout>
             </HorizontalScrollView>
@@ -132,7 +128,7 @@
 
         <!--个人信息-->
         <LinearLayout
-            android:id="@+id/personal_information_01"
+            android:id="@+id/personal_information_02"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:layout_marginTop="10dp"
@@ -156,39 +152,38 @@
                         android:layout_height="40dp"
                         android:orientation="horizontal">
                         <TextView
-                            android:id="@+id/mailpage_name_01"
+                            android:id="@+id/mailpage_name_02"
                             android:layout_width="50dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="15dp"
                             android:textSize="20sp"
-
                             android:textColor="#000000"/>
                         <TextView
-                            android:id="@+id/mailpage_phone_01"
+                            android:id="@+id/mailpage_phone_02"
                             android:layout_width="150dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="15dp"
                             android:textSize="18sp"
-                             />
+                           />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="250dp"
                         android:layout_height="40dp"
                         android:orientation="vertical">
                         <TextView
-                            android:id="@+id/mailpage_address01_01"
+                            android:id="@+id/mailpage_address01_02"
+                            android:layout_width="300dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="12sp"
+                           />
+                        <TextView
+                            android:id="@+id/mailpage_address02_02"
                             android:layout_width="300dp"
                             android:layout_height="20dp"
                             android:layout_marginLeft="15dp"
                             android:textSize="12sp"
                          />
-                        <TextView
-                            android:id="@+id/mailpage_address02_01"
-                            android:layout_width="300dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:textSize="12sp"
-                          />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -255,9 +250,9 @@
 
         <!--选择服务-->
         <LinearLayout
-            android:id="@+id/service_01"
+            android:id="@+id/service_02"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="280dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
             <LinearLayout
@@ -268,7 +263,7 @@
                     android:id="@+id/btn_smqj"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:background="#ffffff"
+                    android:background="#E7EBF7"
                     android:text="上门取件"
                     android:textSize="18dp">
                 </Button>
@@ -276,65 +271,48 @@
                     android:id="@+id/btn_qfwdj"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:background="#E7EBF7"
+                    android:background="#ffffff"
                     android:layout_marginLeft="10dp"
                     android:text="去服务店寄"
                     android:textSize="18dp">
                 </Button>
             </LinearLayout>
 
+
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:background="#ffffff"
                 android:orientation="horizontal">
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:text="快递选择"
-                    android:gravity="center_vertical|left"/>
-                <TextView
-                    android:layout_width="120dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="130dp"
-                    android:text="菜鸟官方上门服务"
-                    android:textColor="#000000"
-                    android:gravity="center_vertical|right"/>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="菜鸟驿站-重庆理工大学两江校区西门"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical|left"/>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="214米|重庆重庆市渝北区龙兴镇怡园支路65号"
+                        android:gravity="center_vertical|left"/>
+                </LinearLayout>
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/yjt"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"/>
-            </LinearLayout>
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:background="#E7EBF7"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="#ffffff"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:text="上门时间"
-                    android:gravity="center_vertical|left"/>
-                <Spinner
-                    android:layout_width="170dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="120dp"
-                    android:gravity="center_vertical|right"
-                    android:entries="@array/gradeArray"
-                    android:spinnerMode="dropdown">
-                </Spinner>
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="25dp"/>
             </LinearLayout>
             <View
                 android:layout_width="fill_parent"
@@ -363,6 +341,20 @@
                     android:spinnerMode="dropdown">
                 </Spinner>
 
+                <!--                <TextView-->
+<!--                    android:layout_width="130dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginLeft="120dp"-->
+<!--                    android:text="日用品/1kg"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:gravity="center_vertical|right"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:src="@drawable/yjt"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="15dp"/>-->
             </LinearLayout>
             <View
                 android:layout_width="fill_parent"
@@ -372,7 +364,7 @@
 
             <LinearLayout
                 android:layout_width="382dp"
-                android:layout_height="132dp"
+                android:layout_height="82dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
                 android:orientation="horizontal">
@@ -405,75 +397,23 @@
                             android:layout_height="30dp"
                             android:layout_marginLeft="15dp"
                             android:layout_marginTop="10dp"
-                            android:src="@drawable/suo"/>
+                            android:src="@drawable/baoguo"/>
                         <TextView
-                            android:layout_width="60dp"
+                            android:layout_width="80dp"
                             android:layout_height="30dp"
-                            android:text="隐私寄"
-                            android:textColor="#24A3FF"
+                            android:text="免费包装"
                             android:textSize="18sp"
+                            android:textColor="#24A3FF"
                             android:gravity="center_vertical"
                             android:layout_marginTop="10dp"/>
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="15dp"
-                            android:src="@drawable/wenhao"/>
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="30dp"
-                            android:text="快递单电话、地址信息加密"
+                            android:text="免费提供回收利用的包材"
                             android:textSize="12sp"
                             android:gravity="center_vertical"
                             android:layout_marginTop="10dp"
-                            android:layout_marginLeft="40dp"/>
-                        <Switch
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_marginTop="10dp"/>
-                    </LinearLayout>
-                    <View
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dp"
-                        android:background="#E7EBF7"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:src="@drawable/suo"/>
-                        <TextView
-                            android:layout_width="120dp"
-                            android:layout_height="30dp"
-                            android:text="放心寄,丢必赔"
-                            android:textSize="18sp"
-                            android:textColor="#24A3FF"
-                            android:gravity="center_vertical"
-                            android:layout_marginTop="10dp"/>
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="15dp"
-                            android:src="@drawable/wenhao"/>
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:text="千元内免保价"
-                            android:textSize="12sp"
-                            android:gravity="center_vertical|right"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginLeft="40dp"/>
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/yjt"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="15dp"/>
+                            android:layout_marginLeft="100dp"/>
                     </LinearLayout>
                     <View
                         android:layout_width="fill_parent"
@@ -493,7 +433,7 @@
 
         <!--邮费-->
         <LinearLayout
-            android:id="@+id/postage_01"
+            android:id="@+id/postage_02"
             android:layout_width="match_parent"
             android:layout_height="145dp"
             android:layout_marginTop="10dp"
@@ -568,7 +508,6 @@
                     android:textSize="18sp"
                     android:text="立即下单">
                 </Button>
-
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

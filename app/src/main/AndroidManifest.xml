@@ -29,6 +29,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".NavigationList_01" />
+        <activity android:name=".NavigationList_02" />
         <activity android:name=".Login" />
         <activity android:name=".package_notification_settings"></activity>
         <activity android:name=".my_address_book"></activity>
