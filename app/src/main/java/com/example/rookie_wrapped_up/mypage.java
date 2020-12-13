@@ -51,7 +51,7 @@ public class mypage extends AppCompatActivity implements View.OnClickListener{
                 intent.setClass(mypage.this,NavigationList_01.class);
                 break;
             case R.id.my_shopping:
-                intent.setClass(mypage.this,MainActivity.class);
+                intent.setClass(mypage.this,Shopping.class);
                 break;
             case R.id.my_setting:
                 intent.setClass(mypage.this,settingActivity.class);

@@ -36,6 +36,7 @@
         <activity android:name=".mypage"></activity>
         <activity android:name=".settingActivity"></activity>
         <activity android:name=".OutPut"></activity>
+        <activity android:name=".Shopping"></activity>
     </application>
 
 </manifest>

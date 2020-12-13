@@ -35,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="请输入密码："
+        android:inputType="textPassword"
         android:maxLines="2"
         android:textSize="20sp"
         android:textStyle="italic"
