@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         shopButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent=new Intent(MainActivity.this,shop_pick_up.class);
+                Intent intent=new Intent(MainActivity.this,mypage.class);
                 //启动
                 startActivity(intent);
 

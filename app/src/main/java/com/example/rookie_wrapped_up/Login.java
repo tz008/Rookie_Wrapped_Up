@@ -65,10 +65,10 @@ public class Login extends AppCompatActivity {
                     people.setName(cursor.getString(1));
                     people.setPhone(cursor.getString(3));
                 }
-                if(people.getName().equals(name)){
+                if(people.getPhone().equals(name)){
                     if(people.getPhone().equals(password)){
                         Toast.makeText(Login.this,"登录成功",Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(Login.this,MainActivity.class);
+                        Intent intent=new Intent(Login.this,mypage.class);
                         //启动
                         startActivity(intent);
                     }else {

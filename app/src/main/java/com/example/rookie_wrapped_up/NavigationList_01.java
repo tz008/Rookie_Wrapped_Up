@@ -2,6 +2,7 @@ package com.example.rookie_wrapped_up;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +42,7 @@ public class NavigationList_01 extends Activity {
         setData();
         setGridView();
         Data();
+        pickUpMailPage();
     }
     /**设置数据*/
     private void setData() {
@@ -189,5 +192,18 @@ public class NavigationList_01 extends Activity {
         cursor.close();
         db.close();
 
+    }
+
+    //    寄件页面点击去我的页面
+    private void pickUpMailPage(){
+        ImageView mailPageButton = findViewById(R.id.mail_page_return);
+        mailPageButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent=new Intent(NavigationList_01.this,mypage.class);
+                //启动
+                startActivity(intent);
+            }
+        });
     }
 }

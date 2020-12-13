@@ -28,6 +28,9 @@ public class mypage extends AppCompatActivity implements View.OnClickListener{
     private void initUI(){
         findViewById(R.id.ll_3).setOnClickListener(this);
         findViewById(R.id.ll_5).setOnClickListener(this);
+        findViewById(R.id.my_pick_up).setOnClickListener(this);
+        findViewById(R.id.my_mail_page).setOnClickListener(this);
+        findViewById(R.id.my_shopping).setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
@@ -38,6 +41,15 @@ public class mypage extends AppCompatActivity implements View.OnClickListener{
                 break;
             case R.id.ll_5:
                 intent.setClass(mypage.this, my_address_book.class);
+                break;
+            case R.id.my_pick_up:
+                intent.setClass(mypage.this,shop_pick_up.class);
+                break;
+            case R.id.my_mail_page:
+                intent.setClass(mypage.this,NavigationList_01.class);
+                break;
+            case R.id.my_shopping:
+                intent.setClass(mypage.this,MainActivity.class);
                 break;
         }
         startActivity(intent);

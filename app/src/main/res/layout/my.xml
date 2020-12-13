@@ -236,6 +236,7 @@
 
             <!--                取件-->
             <LinearLayout
+                android:id="@+id/my_pick_up"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 app:layout_constraintLeft_toLeftOf="@+id/left_pick_up2"
@@ -257,7 +258,7 @@
 
             <!--                寄件-->
             <LinearLayout
-                android:id="@+id/pick_up_mailPage"
+                android:id="@+id/my_mail_page"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 app:layout_constraintLeft_toLeftOf="@+id/left_pick_up3"
@@ -273,7 +274,7 @@
 
             <!--                裹裹购-->
             <LinearLayout
-                android:id="@+id/pick_up_shop"
+                android:id="@+id/my_shopping"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 app:layout_constraintLeft_toLeftOf="@+id/left_pick_up4"
