@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="click1"
-        android:background="			#D2691E"
+        android:background="@drawable/corners3"
         />
 
 
