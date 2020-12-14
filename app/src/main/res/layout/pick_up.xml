@@ -510,7 +510,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-10dp"
                         android:gravity="center"
-                        android:textColor="#24A4FF"
                         android:text="取件" />
 
                 </LinearLayout>

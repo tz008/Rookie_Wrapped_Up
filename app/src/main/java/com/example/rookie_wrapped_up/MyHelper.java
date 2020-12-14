@@ -17,7 +17,7 @@ public class MyHelper extends SQLiteOpenHelper {
     int peopleAddress;
 //    包裹
     String state,time,message,express,img;
-    String state2,time2,message2,img2;
+    String state2,time2,message2,express2,img2;
     String state3,time3,message3,img3;
 
     public MyHelper(Context context){
@@ -64,6 +64,7 @@ public class MyHelper extends SQLiteOpenHelper {
 
 //        包裹
         state = "已签收"; time = "2020.12.13"; message = "淘宝 | 舒克舒克电动牙刷防水声波来来来";express = "中通快递| 您已在理工大学菜鸟驿站签收"; img = "D:/img/parcel.png";
+        state2 = "已签收"; time2 = "2020.12.14"; message2 = "淘宝 | 棉拖鞋女冬季室内防滑底可爱";express2 = "百世快递| 您已在理工大学西门菜鸟驿站签收";
 
 
         db.execSQL("insert into  site(name,address,phone) values(?,?,?)",new Object[]{siteName,siteAddress,sitePhone});
@@ -77,6 +78,7 @@ public class MyHelper extends SQLiteOpenHelper {
         db.execSQL("insert into  people(name,userName,phone,address,parcel,img) values(?,?,?,?,?,?)",new Object[]{peopleName,userName,peoplePhone,peopleAddress,peopleParcel,peopleImg});
 
         db.execSQL("insert into  parcel(state,time,message,express,img) values(?,?,?,?,?)",new Object[]{state,time,message,express,img});
+        db.execSQL("insert into  parcel(state,time,message,express,img) values(?,?,?,?,?)",new Object[]{state2,time2,message2,express2,img});
     }
 
     @Override

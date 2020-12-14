@@ -16,12 +16,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.rookie_wrapped_up.entity.Parcel;
 import com.example.rookie_wrapped_up.entity.People;
+import com.example.rookie_wrapped_up.entity.Site;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomePage extends AppCompatActivity implements View.OnClickListener{
     MyHelper myHelper;
     SQLiteDatabase db;
-    private TextView tState,tMessage,tExpress;
-    Parcel parcel = new Parcel();
+    private TextView tState,tMessage,tExpress,tState2,tMessage2,tExpress2;
+    List<Parcel> parcelList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +70,10 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener{
         tMessage = findViewById(R.id.home_message);
         tExpress =findViewById(R.id.home_express);
 
+        tState2 = findViewById(R.id.home_state2);
+        tMessage2 = findViewById(R.id.home_message2);
+        tExpress2 =findViewById(R.id.home_express2);
+
         Cursor cursor = db.rawQuery("select * from parcel",new String[]{});
         if(cursor.getCount() == 0){
             Log.v("HomePage"," 没有数据 ......");
@@ -73,15 +81,27 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener{
         } else {
             Log.v("NavigationList_01","有");
             cursor.moveToFirst();
-
+            Parcel parcel = new Parcel();
             parcel.setState(cursor.getString(1));
             parcel.setMessage(cursor.getString(3));
             parcel.setExpress(cursor.getString(4));
+            parcelList.add(parcel);
+        } while (cursor.moveToNext()){
+            Parcel parcel = new Parcel();
+            parcel.setState(cursor.getString(1));
+            parcel.setMessage(cursor.getString(3));
+            parcel.setExpress(cursor.getString(4));
+            parcelList.add(parcel);
+//           tName2.setText(cursor.getString(1));
         }
 
-        tState.setText(parcel.getState());
-        tMessage.setText(parcel.getMessage());
-        tExpress.setText(parcel.getExpress());
+        tState.setText(parcelList.get(0).getState());
+        tMessage.setText(parcelList.get(0).getMessage());
+        tExpress.setText(parcelList.get(0).getExpress());
+
+        tState2.setText(parcelList.get(1).getState());
+        tMessage2.setText(parcelList.get(1).getMessage());
+        tExpress2.setText(parcelList.get(1).getExpress());
 
 
 

@@ -148,11 +148,15 @@
             android:layout_height="623dp"
             android:background="#f2f5fc">
 
-            <TextView
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:text="暂无退货宝贝"/>-->
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="暂无退货宝贝"/>
+                android:src="@mipmap/out_put"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
