@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class settingActivity extends AppCompatActivity {
 
@@ -28,6 +29,7 @@ public class settingActivity extends AppCompatActivity {
         mailPageButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                Toast.makeText(settingActivity.this,"退出登录成功",Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(settingActivity.this,MainActivity.class);
                 //启动
                 startActivity(intent);

@@ -16,7 +16,7 @@ public class MyHelper extends SQLiteOpenHelper {
     String peopleName,userName,peoplePhone,peopleParcel,peopleImg;
     int peopleAddress;
 //    包裹
-    String state,time,message,img;
+    String state,time,message,express,img;
     String state2,time2,message2,img2;
     String state3,time3,message3,img3;
 
@@ -45,7 +45,7 @@ public class MyHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db){
 //        建表
         db.execSQL("CREATE TABLE people(_id INTEGER PRIMARY KEY AUTOINCREMENT, name VACHER(20),userName VACHER(20), phone VACHER(20), address INTEGER, parcel INTEGER, img VACHER(20))");
-        db.execSQL("CREATE TABLE parcel(_id INTEGER PRIMARY KEY AUTOINCREMENT, state VACHER(20), time VACHER(20), message VACHER(20), img VACHER(20))");
+        db.execSQL("CREATE TABLE parcel(_id INTEGER PRIMARY KEY AUTOINCREMENT, state VACHER(20), time VACHER(20), message VACHER(20),express VACHER(20),img VACHER(20))");
         db.execSQL("CREATE TABLE address(_id INTEGER PRIMARY KEY AUTOINCREMENT, province VACHER(20), city VACHER(20), detailed_address VACHER(20))");
         db.execSQL("CREATE TABLE site(_id INTEGER PRIMARY KEY AUTOINCREMENT, name VACHER(20), address INTEGER, phone VACHER(20))");
 
@@ -62,6 +62,9 @@ public class MyHelper extends SQLiteOpenHelper {
         peopleName = "唐圳"; userName = "忆往昔丶渺渺兮予怀"; peoplePhone = "9999999"; peopleParcel = "1,2,3"; peopleImg = "D:img/img.jpg";
         peopleAddress = 1;
 
+//        包裹
+        state = "已签收"; time = "2020.12.13"; message = "淘宝 | 舒克舒克电动牙刷防水声波来来来";express = "中通快递| 您已在理工大学菜鸟驿站签收"; img = "D:/img/parcel.png";
+
 
         db.execSQL("insert into  site(name,address,phone) values(?,?,?)",new Object[]{siteName,siteAddress,sitePhone});
         db.execSQL("insert into  site(name,address,phone) values(?,?,?)",new Object[]{siteName2,siteAddress2,sitePhone2});
@@ -72,6 +75,8 @@ public class MyHelper extends SQLiteOpenHelper {
         db.execSQL("insert into  address(province,city,detailed_address) values(?,?,?)",new Object[]{province,city,detailedAddress3});
 
         db.execSQL("insert into  people(name,userName,phone,address,parcel,img) values(?,?,?,?,?,?)",new Object[]{peopleName,userName,peoplePhone,peopleAddress,peopleParcel,peopleImg});
+
+        db.execSQL("insert into  parcel(state,time,message,express,img) values(?,?,?,?,?)",new Object[]{state,time,message,express,img});
     }
 
     @Override

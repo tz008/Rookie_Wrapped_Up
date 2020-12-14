@@ -473,6 +473,7 @@
 
 <!--                首页-->
                 <LinearLayout
+                    android:id="@+id/pick_up_home"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     app:layout_constraintLeft_toLeftOf="@+id/left_pick_up1"

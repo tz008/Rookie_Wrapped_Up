@@ -47,6 +47,17 @@ public class shop_pick_up extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //取件页面 点击去往  主页面
+        LinearLayout homePage=findViewById(R.id.pick_up_home);
+        homePage.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent=new Intent(shop_pick_up.this,HomePage.class);
+                //启动
+                startActivity(intent);
+            }
+        });
     }
 
 //    取件页面点击去寄件页面

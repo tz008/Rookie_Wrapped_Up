@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class OutPut extends AppCompatActivity {
 
@@ -24,7 +25,17 @@ public class OutPut extends AppCompatActivity {
     //    点击去往我的页面
     private void goMailPage(){
         ImageView mailPageButton = findViewById(R.id.out_put_my);
+        TextView outPut = findViewById(R.id.out_put_mail_page);
         mailPageButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent=new Intent(OutPut.this,NavigationList_01.class);
+                //启动
+                startActivity(intent);
+            }
+        });
+
+        outPut.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent intent=new Intent(OutPut.this,NavigationList_01.class);

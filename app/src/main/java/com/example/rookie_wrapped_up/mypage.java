@@ -33,6 +33,7 @@ public class mypage extends AppCompatActivity implements View.OnClickListener{
         findViewById(R.id.my_mail_page).setOnClickListener(this);
         findViewById(R.id.my_shopping).setOnClickListener(this);
         findViewById(R.id.my_setting).setOnClickListener(this);
+        findViewById(R.id.my_home).setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
@@ -55,6 +56,9 @@ public class mypage extends AppCompatActivity implements View.OnClickListener{
                 break;
             case R.id.my_setting:
                 intent.setClass(mypage.this,settingActivity.class);
+                break;
+            case R.id.my_home:
+                intent.setClass(mypage.this,HomePage.class);
                 break;
         }
         startActivity(intent);

@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v("Login"," onClick OK!");
+                Log.v("MainActivity"," onClick OK!");
 
                 nameText=findViewById(R.id.login_name);
                 passwordText = findViewById(R.id.login_password);
@@ -61,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Cursor cursor = db.rawQuery("select * from people",new String[]{});
                 if(cursor.getCount() == 0){
-                    Log.v("Login"," 没有数据 ......");
+                    Log.v("MainActivity"," 没有数据 ......");
                     Toast.makeText(MainActivity.this,"没有数据",Toast.LENGTH_SHORT).show();
                 } else {
-                    Log.v("Login","有");
+                    Log.v("MainActivity","有");
                     cursor.moveToFirst();
                     people.setName(cursor.getString(1));
                     people.setPhone(cursor.getString(3));
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 if(people.getPhone().equals(name)){
                     if(people.getPhone().equals(password)){
                         Toast.makeText(MainActivity.this,"登录成功",Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(MainActivity.this,mypage.class);
+                        Intent intent=new Intent(MainActivity.this,HomePage.class);
                         //启动
                         startActivity(intent);
                     }else {

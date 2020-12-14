@@ -24,13 +24,13 @@
         <activity android:name=".shop_pick_up"></activity>
         <activity android:name=".NavigationList_01" />
         <activity android:name=".NavigationList_02" />
-        <activity android:name=".Login" />
         <activity android:name=".package_notification_settings"></activity>
         <activity android:name=".my_address_book"></activity>
         <activity android:name=".mypage"></activity>
         <activity android:name=".settingActivity"></activity>
         <activity android:name=".OutPut"></activity>
         <activity android:name=".Shopping"></activity>
+        <activity android:name=".HomePage"></activity>
     </application>
 
 </manifest>
