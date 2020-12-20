@@ -31,6 +31,7 @@
         <activity android:name=".OutPut"></activity>
         <activity android:name=".Shopping"></activity>
         <activity android:name=".HomePage"></activity>
+        <activity android:name=".Goods"></activity>
     </application>
 
 </manifest>

@@ -59,7 +59,7 @@ public class MyHelper extends SQLiteOpenHelper {
         province = "重庆"; city = "重庆"; detailedAddress = "怡园支路65号";detailedAddress2 = "普福大道459号重庆理工大学两江校区";detailedAddress3 ="重庆市重庆市渝北区龙兴镇怡园支路95号";
 
 //        个人
-        peopleName = "唐圳"; userName = "忆往昔丶渺渺兮予怀"; peoplePhone = "9999999"; peopleParcel = "1,2,3"; peopleImg = "D:img/img.jpg";
+        peopleName = "唐圳"; userName = "忆往昔丶渺渺兮予怀"; peoplePhone = "123"; peopleParcel = "1,2,3"; peopleImg = "D:img/img.jpg";
         peopleAddress = 1;
 
 //        包裹

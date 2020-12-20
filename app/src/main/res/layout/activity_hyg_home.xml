@@ -182,6 +182,7 @@
             </TextView>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/goods_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -245,6 +246,7 @@
 
 <!--包裹2-->
         <LinearLayout
+            android:id="@+id/goods_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"

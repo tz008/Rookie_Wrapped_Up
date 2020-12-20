@@ -41,6 +41,8 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener{
         findViewById(R.id.home_mail_page).setOnClickListener(this);
         findViewById(R.id.home_shopping).setOnClickListener(this);
         findViewById(R.id.home_my).setOnClickListener(this);
+        findViewById(R.id.goods_1).setOnClickListener(this);
+        findViewById(R.id.goods_2).setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
@@ -57,6 +59,14 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener{
                 break;
             case R.id.home_my:
                 intent.setClass(HomePage.this,mypage.class);
+                break;
+            case R.id.goods_1:
+                intent.putExtra("key","1");
+                intent.setClass(HomePage.this,Goods.class);
+                break;
+            case R.id.goods_2:
+                intent.putExtra("key","2");
+                intent.setClass(HomePage.this,Goods.class);
                 break;
         }
         startActivity(intent);
